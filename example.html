@@ -5,7 +5,7 @@
 		<title>jQuery Blend</title>
 		<style>
 			*{padding:0; border:0; margin:0;}
-			h2{font-size:16px; margin-bottom:5px; color:#555; font-weight:normal; font-family:verdana, arial, sans-serif;}
+			h2{font-size:12px; margin-bottom:5px; color:#333; font-weight:normal; font-family:verdana, sans-serif; }
 			
 			#demo a{
 				display:block;
@@ -18,7 +18,7 @@
 				cursor:pointer;
 				text-indent:-9999px;
 			}
-			#default, #example{clear:left; overflow:auto; margin-bottom:30px;}
+			#default, #example{clear:left; overflow:auto; margin-bottom:20px;}
 			#default_home{background-position:0 0;}
 			#default_home:hover,#default_home.hover{background-position:0 -48px;}
 			#default_blog{background-position:-90px 0;}
@@ -45,8 +45,8 @@
 			#example_contact{background-position:-450px 0;}
 			#example_contact:hover,#example_contact.hover{background-position:-450px -48px;}
 		</style>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-		<script src="jquery.blend.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="jquery.blend-min.js"></script>
 		<script>
 			$(document).ready(function(){
 				$("#example a").blend();
@@ -66,7 +66,7 @@
 			</div>
 		
 			<div id="example">
-				<h2>Blend: $(selector).blend();</h2>
+				<h2>Blend Applied</h2>
 				<a href="#" id="example_home">Home</a>
 				<a href="#" id="example_blog">Blog</a>
 				<a href="#" id="example_demo">Demo</a>

@@ -1,6 +1,6 @@
 // Blend 2.2 for jQuery 1.3+
 // Copyright (c) 2011 Jack Moore - jack@colorpowered.com
-// Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+// License: http://www.opensource.org/licenses/mit-license.php
 
 // Blend creates a 2nd layer on top of the selected element.
 // This layer is faded in and out to create the effect.  The original, bottom layer
