@@ -1,3 +1,6 @@
+## About Blend:
+A background-merging effect plugin for jQuery.  See the [project page](http://jacklmoore.com/blend/) for documentation and a demonstration.  Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
+
 ## Changelog:
 
 ### Version 2.2 - June 09 2011
