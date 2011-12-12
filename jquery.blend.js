@@ -48,12 +48,14 @@
 				if ($(base).css('position') !== 'absolute') {
 					base.style.position = 'relative';
 				}
-				
+								
 				for(i = 0; property = properties[i]; i++){
                     if (property in style) {
 						hover.style[property] = content.style[property] = style[property];
 					}
 				}
+				
+				$(base).css({'width' : $(base).width()});
 				
 				content.style.backgroundImage = content.style.backgroundColor = '';
 				
