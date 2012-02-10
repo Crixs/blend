@@ -1,4 +1,4 @@
-// Blend 2.2 for jQuery 1.3+
+// Blend 2.3 for jQuery 1.3+
 // Copyright (c) 2011 Jack Moore - jack@colorpowered.com
 // License: http://www.opensource.org/licenses/mit-license.php
 
@@ -19,13 +19,7 @@
 		    background + 'Attachment',
 		    background + 'Position', // Standards browsers
 		    background + 'PositionX', // IE only
-		    background + 'PositionY', // IE only
-			padding + 'Top',
-			padding + 'Left',
-			padding + 'Right',
-			padding + 'Bottom',
-			'width',
-			'height'
+		    background + 'PositionY' // IE only
 		];
 		
 		speed = speed || $.fn.blend.speed;
@@ -37,8 +31,9 @@
             
 			$this.each(function () {
                 var
-                layer = '<span style="position:absolute;top:0;left:0;display:block"/>',
-                content = $(layer)[0],
+                layer = '<span style="position:absolute;top:0;bottom:0;left:0;right:0;"/>',
+                layer2 = '<span style="position:relative;"/>',
+                content = $(layer2)[0],
                 hover = $(layer)[0],
                 base = this,
                 style = base.currentStyle || window.getComputedStyle(base, null),
@@ -48,15 +43,13 @@
 				if ($(base).css('position') !== 'absolute') {
 					base.style.position = 'relative';
 				}
-								
+				
 				for(i = 0; property = properties[i]; i++){
                     if (property in style) {
 						hover.style[property] = content.style[property] = style[property];
 					}
 				}
-				
-				$(base).css({'width' : $(base).width()});
-				
+
 				content.style.backgroundImage = content.style.backgroundColor = '';
 				
 				$(base)

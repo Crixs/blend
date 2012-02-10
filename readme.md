@@ -3,6 +3,10 @@ A background-merging effect plugin for jQuery.  See the [project page](http://ja
 
 ## Changelog:
 
+### Version 2.3 - Feb 10 2011
+
+* No longer needs to copy the width, height, and padding styles.  Enables fluid layouts.
+
 ### Version 2.2 - June 09 2011
 
 * Bug fix for absolutely positioned elements
